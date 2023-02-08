@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // defines te rem
+  font-size: 62.5%; /* 16px */
+
+  @include breakpoint(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include breakpoint(tab-port) {
+    font-size: 56%; //1rem = 8px; 8px/16px = 62.5%
+  }
+
+  @include breakpoint(desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+
+  @include breakpoint(tab-port) {
+    padding: 0;
+  }
+}
