@@ -17,6 +17,20 @@
   -ms-transform: skewX(-12deg);
   -o-transform: skewX(-12deg);
 
+  @include breakpoint(tab-port) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+
+  @include breakpoint(phone) {
+    transform: skewX(0);
+    -webkit-transform: skewX(0);
+    -moz-transform: skewX(0);
+    -ms-transform: skewX(0);
+    -o-transform: skewX(0);
+  }
+
   //shape-outsideonlyworkswhendimensionsandfloatisset
   //itjustdefineshowelementsshouldfloataroundtheshape
   &__shape {
@@ -32,6 +46,14 @@
     -o-transform: translateX(-3rem) skewX(12deg);
     background-color: red;
     position: relative;
+
+    @include breakpoint(phone) {
+      transform: translateX(-3rem) skewX(0);
+      -webkit-transform: translateX(-3rem) skewX(0);
+      -moz-transform: translateX(-3rem) skewX(0);
+      -ms-transform: translateX(-3rem) skewX(0);
+      -o-transform: translateX(-3rem) skewX(0);
+    }
   }
 
   &__img {
@@ -56,6 +78,14 @@
     -moz-transform: skewX(12deg);
     -ms-transform: skewX(12deg);
     -o-transform: skewX(12deg);
+
+    @include breakpoint(phone) {
+      transform: skewX(0);
+      -webkit-transform: skewX(0);
+      -moz-transform: skewX(0);
+      -ms-transform: skewX(0);
+      -o-transform: skewX(0);
+    }
   }
 
   &__caption {

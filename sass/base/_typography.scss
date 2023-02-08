@@ -59,10 +59,10 @@ body {
   -o-transition: all 0.2s ease;
   letter-spacing: 0.2rem;
 
-  @include breakpoint(tab-porte) {
+  @include breakpoint(tab-land) {
     font-size: 3rem;
   }
-  @include breakpoint(tab-porte) {
+  @include breakpoint(tab-port) {
     font-size: 2.5rem;
   }
 

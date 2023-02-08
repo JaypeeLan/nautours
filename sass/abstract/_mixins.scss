@@ -22,8 +22,8 @@
 
 // phone 600/16px
 // tab-port 900/16px
-// tab-land 1200
-// desktop 1800
+// tab-land 1200/16px
+// desktop 1800/16px
 
 @mixin breakpoint($breakpoint) {
   @if $breakpoint == phone {
