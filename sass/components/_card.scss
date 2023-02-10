@@ -25,6 +25,7 @@
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     overflow: hidden;
+
     &--front {
       background-color: $color-white;
     }
@@ -66,6 +67,7 @@
     -ms-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
   }
+
   &:hover &__side--back {
     transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
@@ -195,7 +197,7 @@
     font-weight: 100;
   }
 
-  @include breakpoint(tab-port) {
+  @media only screen and (max-width: 56.75em), only screen and (hover: none) {
     min-height: auto;
     border-radius: 3px;
     -webkit-border-radius: 3px;
